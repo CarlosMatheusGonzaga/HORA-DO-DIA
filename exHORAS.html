@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="">script.js</script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+    <h1 id="tituloinicial">HORA DO DIA</h1>
+    </header>
+
+    <section>
+        
+            <div id="paragrafo">
+            
+        </div>
+        <div id="paraimagem">
+            <img src="imagens/PNG Dia.png" onload="carregar()" id="dayperiod" alt="Período do Dia" srcset="">
+        </div>
+    </section>
+    
+    <script>
+        var paragrafo = window.document.getElementById('paragrafo')
+        var dayperiod = window.document.getElementById('dayperiod')
+
+        function carregar() {
+
+           var horas = new Date()
+           var horas2 = horas.getHours()
+           var horas3 = horas.getMinutes()
+
+          // var horas2 = 23
+          // var horas3 = 20
+
+ 
+            paragrafo.innerHTML = ` AGORA SÃO EXATAMENTE <strong>${horas2} HORAS</strong> E <strong>${horas3} MINUTOS</strong>.`
+
+            if (horas2 < 12) {
+                paragrafo.innerHTML += ' BOM DIA!'
+                dayperiod.src = 'imagens/PNG Dia.png'
+            }
+
+            else if (horas2 < 18) {
+                paragrafo.innerHTML += ' BOA TARDE!'
+                dayperiod.src = 'imagens/PNG Tarde.png'
+                window.document.body.style.background = '#febea2'
+                
+            }
+
+            else {
+                paragrafo.innerHTML += ' BOA NOITE!'
+                dayperiod.src = 'imagens/PNG Noite.png'
+                window.document.body.style.background = '#101d34'
+
+                var titulo = window.document.getElementById('tituloinicial')
+                titulo.style.color = 'white'
+
+                var finaldapag = window.document.getElementById('finaldapag')
+                finaldapag.style.color = 'white'
+            }
+
+        }
+ 
+    </script>
+</body>
+
+<footer>
+    <div>
+        <img id="fotomatheus" src="imagens/Matheus3.png" alt="Foto de Carlos Matheus" srcset="">
+    </div>
+    <div id="finaldapag"> <p>GitHub: https://github.com/CarlosMatheusGonzaga/ <br>
+    LinkedIn: https://www.linkedin.com/in/carlos-matheus-tenorio-dias-gonzaga-18a877185/ <br>
+    Instagram: @carlosmatheustdg <br>
+    WhatsApp: (13) 99148-6192</div> </p>
+</footer>
+</html>
