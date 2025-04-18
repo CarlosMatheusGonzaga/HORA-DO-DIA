@@ -1,0 +1,60 @@
+body {
+    background-color: aqua;
+    align-items: center;
+    
+    
+    
+}
+
+h1 {
+    margin-left: 590px;
+
+}
+
+section {
+    background-color: white;
+    padding: 5px;
+    height: 190px;
+    width: 500px;
+    margin-left: 500px;
+    font-size: 20px;
+    border-radius: 15px; 
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9); 
+    
+}
+
+div {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+div#genero {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-left: 500px;
+    margin-top: 30px;
+    
+    font-size: large;
+    font-style: italic;
+    display: flex;
+    
+    
+}
+
+#Matheus {
+    height: 120px;
+    margin-left: -70px;
+    
+    
+}
+
+
+#fotopessoa {
+    height: 200px;
+    padding: 50px;
+    margin-left: 65px;
+}
+
